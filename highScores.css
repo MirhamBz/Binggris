@@ -1,0 +1,11 @@
+.high-Score:hover {
+  transform: scale(1.025);
+}
+
+#highScoresList {
+  list-style: decimal;
+  padding-left: 0;
+  margin-bottom: 4rem;
+  color: #fff;
+  font-size: 4.5rem;
+}

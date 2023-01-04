@@ -1,0 +1,236 @@
+/* ---- background ---- */
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+#button {
+  position: absolute;
+  background: #0a0a0a;
+  top: 22%;
+  left: 0%;
+  width: 10%;
+}
+:root {
+  background-color: #0a0a0a;
+}
+* {
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 58.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#question {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  color: aliceblue;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 6rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 88rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 2.3rem;
+  padding: 2rem 0rem;
+  width: 30rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  background: rgb(246, 244, 244);
+  border-radius: 12px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 2, 2, 0.6);
+  transition: transform 150ms;
+  transform: scale(1.06);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#highscore-btn {
+  background-color: linear-gradient(90deg, rgb(249, 226, 54) 0%, rgb(158, 150, 72) 100%);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#highscore-btn:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(240, 0, 0, 0.5);
+}
+.fa-crown {
+  font-size: 2.5rem;
+  margin-left: 0rem;
+}
+
+/* CSS END GAME.HTML */
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+input {
+  margin-bottom: 1rem;
+  width: 30rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(232, 3, 3, 0.6);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+#username {
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+}
+
+#end-text {
+  font-size: 2.4rem;
+  color: rgb(250, 240, 240);
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
+
+.fa-home {
+  margin-left: 1rem;
+  font-size: 2.3rem;
+  color: rgb(28, 26, 26);
+}
+/* send */
+#saveScoreBtn {
+  position: relative;
+  display: inline-block;
+  background: #f3f3f3;
+  color: #060506;
+  overflow: hidden;
+}
+
+#saveScoreBtn:focus {
+  animation: morph 1.25s forwards;
+}
+
+#saveScoreBtn > * {
+  position: absolute;
+  transform: translate(-0%, -1341%);
+  width: 100%;
+}
+
+.fa-sharp {
+  display: none;
+  font-size: 5.4rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#saveScoreBtn:focus .submit {
+  animation: reveal 0.5s 1.25s forwards;
+}
+
+#saveScoreBtn:focus .fa-sharp {
+  display: block;
+  animation: takeoff 2s forwards;
+}
+
+@keyframes reveal {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes morph {
+  10%,
+  80% {
+    width: 50px;
+    border-radius: 50%;
+    background: #000000;
+    color: #fffdfd;
+  }
+  100% {
+    background: #f3f3f3;
+    color: #000000;
+  }
+}
+
+@keyframes takeoff {
+  5%,
+  15%,
+  25%,
+  35%,
+  45% {
+    transform: translate(-47%, -50%);
+  }
+  10%,
+  20%,
+  30%,
+  40%,
+  50% {
+    transform: translate(-53%, -50%);
+  }
+  90% {
+    transform: translate(100px, -100px);
+  }
+  100% {
+    transform: translate(100px, -100px);
+  }
+}

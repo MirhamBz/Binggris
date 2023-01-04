@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 140%;
+  justify-content: center;
+}
+#canvas {
+  background-color: #23233d;
+  width: 100%;
+  height: 647%;
+}
+#button {
+  position: absolute;
+  color: rgb(191, 35, 35);
+  top: 90%;
+  left: 50%;
+  color: rgb(45, 45, 225);
+}
+.card {
+  position: absolute;
+  display: flex;
+  place-items: center;
+  background: transparent;
+  color: whitesmoke;
+  border: 5px solid black;
+  top: 0%;
+  margin: 9%;
+  height: 644%;
+  width: 85%;
+}
+p {
+  color: rgb(255, 255, 255);
+  padding-left: 2rem;
+}
+#p1 {
+  padding-top: 3rem;
+  padding-bottom: 100rem;
+}
+#p2,
+#p3,
+#p4 {
+  padding-top: 50px;
+  padding-bottom: 9px;
+}
+h5,
+.card-title {
+  padding-top: 2rem;
+  color: rgb(0, 255, 217);
+}
+
+video {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 80%;
+  left: 10%;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+figcaption {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0%;
+  left: 4%;
+  font-size: 1.6rem;
+}
+video:hover {
+  box-shadow: 0 0 10px gray;
+}
